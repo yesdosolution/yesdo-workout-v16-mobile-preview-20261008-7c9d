@@ -1,0 +1,68 @@
+
+/* V16 Workout Session player - scoped to copy of V15, no global restyling. */
+#wdsSession.wds-screen {position:absolute;inset:0;background:#f8fbf8;z-index:350;display:flex;flex-direction:column;color:#223e2e;font-family:inherit;}
+#wdsSession.wds-screen.hidden {display:none!important;}
+#wdsSession button,#wdsSession input {font-family:inherit;}
+#wdsSession .wds-top {padding:17px 17px 14px;background:#fff;border-bottom:1px solid #e5eee5;display:flex;align-items:center;gap:10px;flex-shrink:0;}
+#wdsSession .wds-back {width:37px;height:37px;flex:0 0 37px;border-radius:12px;border:1px solid #e1ebe1;background:#f6faf5;font-size:17px;color:#356b45;}
+#wdsSession .wds-heading {flex:1;min-width:0;}
+#wdsSession .wds-heading strong {display:block;font-size:15px;line-height:1.3;}
+#wdsSession .wds-heading small {display:block;color:#758678;font-size:10px;margin-top:3px;}
+#wdsSession .wds-close {width:34px;height:34px;flex:0 0 34px;border:0;border-radius:50%;background:#eef3ef;color:#667d6d;font-size:18px;}
+#wdsSession .wds-content {flex:1;overflow-y:auto;padding:15px 15px 16px;scrollbar-width:thin;overscroll-behavior:contain;}
+#wdsSession .wds-footer {padding:12px 14px max(14px, env(safe-area-inset-bottom));background:#fff;border-top:1px solid #e5eee5;box-shadow:0 -7px 24px rgba(25,61,30,.05);display:flex;gap:8px;flex-shrink:0;}
+#wdsSession .wds-btn {border:0;border-radius:13px;padding:13px 10px;font-weight:900;font-size:12px;line-height:1.2;cursor:pointer;}
+#wdsSession .wds-btn.primary {background:#29854d;color:#fff;flex:1;box-shadow:0 7px 17px rgba(36,117,60,.13);}
+#wdsSession .wds-btn.secondary {background:#ecf5ed;color:#267144;flex:0 0 auto;min-width:90px;}
+#wdsSession .wds-btn.soft {background:#fff0e7;color:#b66a3a;flex:0 0 auto;}
+#wdsSession .wds-btn:disabled {opacity:.45;cursor:not-allowed;box-shadow:none;}
+#wdsSession .wds-kicker {font-size:10px;color:#39815a;font-weight:950;letter-spacing:.07em;}
+#wdsSession .wds-hero {padding:18px;border-radius:21px;background:linear-gradient(125deg,#257b48,#44a36b);color:#fff;margin-bottom:15px;}
+#wdsSession .wds-hero .wds-kicker {color:#c9f3d8;}
+#wdsSession .wds-hero h2 {margin:6px 0;font-size:22px;line-height:1.25;}
+#wdsSession .wds-hero p {font-size:11px;color:#e8faeb;line-height:1.5;margin:3px 0 0;}
+#wdsSession .wds-stats {display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:14px;}
+#wdsSession .wds-stat {padding:10px 8px;background:rgba(255,255,255,.15);border-radius:12px;}
+#wdsSession .wds-stat strong {display:block;font-size:17px;color:#fff;}
+#wdsSession .wds-stat span {display:block;margin-top:3px;font-size:9px;color:#e7f9e8;}
+#wdsSession .wds-card {border:1px solid #e0eadf;background:#fff;border-radius:17px;padding:13px;margin-bottom:12px;box-shadow:0 7px 20px rgba(22,79,41,.04);}
+#wdsSession .wds-section-name {font-size:15px;font-weight:900;margin:13px 2px 10px;}
+#wdsSession .wds-planitem {display:grid;grid-template-columns:37px 1fr auto;align-items:center;gap:8px;padding:11px 0;border-bottom:1px solid #ebf0eb;}
+#wdsSession .wds-planitem:last-child {border-bottom:0;}
+#wdsSession .wds-planicon {width:37px;height:37px;border-radius:11px;display:grid;place-items:center;background:#edf7ed;font-size:21px;overflow:hidden;}
+#wdsSession .wds-planicon img {width:100%;height:100%;object-fit:cover;}
+#wdsSession .wds-planitem strong {font-size:12px;display:block;}
+#wdsSession .wds-planitem small {font-size:10px;color:#738476;display:block;margin-top:3px;}
+#wdsSession .wds-planitem .wds-mins {text-align:right;font-size:11px;font-weight:850;white-space:nowrap;}
+#wdsSession .wds-tip {padding:11px 12px;border-radius:13px;background:#eef7eb;color:#4e7258;font-size:11px;line-height:1.6;margin:12px 0;}
+#wdsSession .wds-tip.warn {background:#fff4ec;color:#8d6547;}
+#wdsSession .wds-bar {height:7px;border-radius:999px;background:#e5efe7;overflow:hidden;margin:10px 0 12px;}
+#wdsSession .wds-bar > span {display:block;background:#37965b;height:100%;border-radius:999px;transition:width .15s;}
+#wdsSession .wds-active-name {font-size:23px;font-weight:950;line-height:1.25;margin:5px 0 8px;}
+#wdsSession .wds-activity-sub {font-size:11px;color:#6a806e;margin-bottom:9px;}
+#wdsSession .wds-media {border-radius:16px;overflow:hidden;background:#eaf5ed;border:1px solid #dcebdc;aspect-ratio:16/9;position:relative;}
+#wdsSession .wds-media video {display:block;width:100%;height:100%;object-fit:cover;}
+#wdsSession .wds-video-control {position:absolute;bottom:9px;right:9px;border:0;border-radius:11px;background:#224833;color:white;padding:9px 11px;font-size:11px;font-weight:900;}
+#wdsSession .wds-static-media {height:100%;width:100%;display:grid;place-items:center;background:linear-gradient(135deg,#e9f5ed,#deebe2);font-size:67px;}
+#wdsSession .wds-media-note {font-size:10px;color:#7c897e;line-height:1.5;margin:7px 1px 12px;}
+#wdsSession .wds-time-row {display:flex;justify-content:space-between;align-items:center;gap:6px;}
+#wdsSession .wds-time-label {font-size:13px;font-weight:900;}
+#wdsSession .wds-timehint {font-size:11px;color:#859287;}
+#wdsSession .wds-adjust {display:grid;grid-template-columns:40px 1fr 40px;gap:8px;margin:10px 0;}
+#wdsSession .wds-adjust button {border:1px solid #dae9dd;border-radius:12px;background:#f1f8f1;font-size:19px;font-weight:850;color:#357c4c;}
+#wdsSession .wds-adjust input {border:1px solid #d4e7d8;background:#fff;border-radius:12px;min-width:0;text-align:center;padding:9px 3px;font-size:21px;font-weight:900;color:#2a6845;}
+#wdsSession .wds-next {font-size:10px;color:#647768;margin-top:8px;line-height:1.5;}
+#wdsSession .wds-badge {display:inline-block;border-radius:999px;background:#eaf6ea;color:#357d4a;padding:5px 9px;font-size:10px;font-weight:850;}
+#wdsSession .wds-badge.skip {background:#f4f4f0;color:#6b776a;}
+#wdsSession .wds-summarynum {font-size:28px;font-weight:950;color:#317949;line-height:1.2;}
+#wdsSession .wds-summary-card {display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin:13px 0;}
+#wdsSession .wds-summary-card > div {background:#eaf6ee;padding:11px 6px;border-radius:12px;text-align:center;}
+#wdsSession .wds-summary-card strong {display:block;font-size:19px;color:#297a49;}
+#wdsSession .wds-summary-card span {display:block;font-size:9px;color:#5d7d66;margin-top:3px;}
+#wdsSession .wds-edit-link {border:0;background:#eef6ef;color:#337d4f;border-radius:8px;padding:7px;font-size:10px;font-weight:850;white-space:nowrap;}
+#wdsSession .wds-status-icon {color:#3f9d60;font-weight:900;}
+#workoutPage #wdsResumeBtn {margin:0 0 10px;display:block;width:100%;background:#e2f3e4;color:#227346;border:1px solid #a4d1ac;border-radius:13px;padding:11px 12px;font-size:12px;font-weight:900;}
+#workoutPage #wdsResumeBtn.hidden {display:none!important;}
+@media (prefers-reduced-motion: reduce) {#wdsSession .wds-bar>span {transition:none;}}
+
+body.wds-session-open #sidebarTriggerBtn {opacity:0!important;visibility:hidden!important;pointer-events:none!important;}

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <rect width="500" height="500" fill="#fbf8f6" rx="16"/>
+  <rect x="75" y="40" width="350" height="420" rx="20" fill="#f2eae4" stroke="#c8b5a6" stroke-width="4"/>
+  <rect x="95" y="60" width="310" height="70" rx="12" fill="#6d4833"/>
+  <text x="250" y="102" font-family="'Sarabun', sans-serif" font-size="26" font-weight="900" fill="#ffffff" text-anchor="middle">BodyKey by Nutrilite™</text>
+  <rect x="150" y="145" width="200" height="32" rx="16" fill="#e0d1c7"/>
+  <text x="250" y="167" font-family="'Sarabun', sans-serif" font-size="16" font-weight="bold" fill="#4d2f1d" text-anchor="middle">สูตรน้ำตาลน้อยกว่า</text>
+  <circle cx="250" cy="245" r="55" fill="#a37e66" opacity="0.3"/>
+  <text x="250" y="255" font-family="'Sarabun', sans-serif" font-size="44" text-anchor="middle">🍫</text>
+  <text x="250" y="320" font-family="'Sarabun', sans-serif" font-size="28" font-weight="900" fill="#4a2c1a" text-anchor="middle">รสโกโก้</text>
+  <text x="250" y="350" font-family="'Sarabun', sans-serif" font-size="16" fill="#78533d" text-anchor="middle">Cocoa Flavor · 14 ซอง (51g/ซอง)</text>
+  <rect x="120" y="375" width="260" height="28" rx="6" fill="#ffffff" stroke="#c8b5a6" stroke-width="1.5"/>
+  <text x="250" y="394" font-family="'Sarabun', sans-serif" font-size="14" font-weight="bold" fill="#2d6a4f" text-anchor="middle">SKU: 128184TH · 205 kcal · P 17g</text>
+  <text x="250" y="435" font-family="'Sarabun', sans-serif" font-size="13" fill="#8c5836" text-anchor="middle">📦 รอไฟล์ภาพกล่องจริงจากผู้ใช้ (Amway ติด 403)</text>
+</svg>

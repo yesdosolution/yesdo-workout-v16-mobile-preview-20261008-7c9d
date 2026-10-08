@@ -1,0 +1,26 @@
+/* Workout V15 custom silent motion loops and showcase. */
+#workoutPage .wdm-gallery {margin:13px 0 17px;}
+#workoutPage .wdm-gallery-heading {display:flex;align-items:center;justify-content:space-between;margin:0 1px 8px;gap:10px}
+#workoutPage .wdm-gallery-heading h3 {font-size:15px;margin:0;color:#1d4631}
+#workoutPage .wdm-gallery-heading small {font-size:10px;color:#718878}
+#workoutPage .wdm-gallery-list {display:flex;gap:9px;overflow-x:auto;scroll-snap-type:x mandatory;padding:2px 2px 9px;scrollbar-width:thin;}
+#workoutPage .wdm-gallery-tile {flex:0 0 133px;scroll-snap-align:start;border:1px solid #d9eadd;border-radius:15px;background:#fff;padding:6px;text-align:left;box-shadow:0 7px 17px rgba(35,90,53,.06);color:#274a32;cursor:pointer;}
+#workoutPage .wdm-gallery-tile:focus-visible {outline:3px solid #67b681;outline-offset:1px;}
+#workoutPage .wdm-gallery-figure {position:relative;display:block;width:100%;overflow:hidden;border-radius:11px;background:#e5f2e9;aspect-ratio:16/10;}
+#workoutPage .wdm-gallery-figure img {width:100%;height:100%;object-fit:cover;display:block;}
+#workoutPage .wdm-playchip {position:absolute;right:6px;bottom:6px;background:rgba(24,67,44,.88);color:#fff;font-size:9px;font-weight:800;border-radius:7px;padding:5px 6px;}
+#workoutPage .wdm-gallery-tile b {display:block;font-size:11px;margin:7px 3px 2px;line-height:1.4;}
+#workoutPage .wdm-gallery-tile small {display:block;font-size:9px;color:#7b8d7f;margin:0 3px 3px;}
+#workoutPage .wdm-clip-indicator {background:#e8f5eb;color:#2b7c48;border-radius:7px;padding:4px 6px;margin-top:5px;font-size:9px;font-weight:800;display:inline-flex;gap:3px;align-items:center;}
+.wd-detail-modal .wdm-media {margin:9px 0 15px;}
+.wd-detail-modal .wdm-frame {position:relative;overflow:hidden;border-radius:15px;border:1px solid #d8eadc;background:#e6f3e9;aspect-ratio:16/9;}
+.wd-detail-modal .wdm-frame video {width:100%;height:100%;display:block;object-fit:cover;background:#ecf6ee;}
+.wd-detail-modal .wdm-toggle {position:absolute;right:10px;bottom:10px;border:1px solid rgba(255,255,255,.38);background:rgba(25,62,42,.87);color:#fff;box-shadow:0 5px 15px rgba(0,0,0,.12);border-radius:10px;padding:8px 11px;font-size:11px;font-weight:900;min-width:92px;cursor:pointer;}
+.wd-detail-modal .wdm-toggle:focus-visible {outline:3px solid #53d17e;outline-offset:2px;}
+.wd-detail-modal .wdm-caption {font-size:10px;line-height:1.55;color:#6c796e;margin:7px 2px 2px;}
+.wd-detail-modal .wdm-illustration-label {display:flex;gap:5px;flex-wrap:wrap;align-items:center;margin:8px 2px 6px;font-size:10px;color:#286f43;font-weight:850;}
+.wd-detail-modal .wdm-error {display:none;border:1px solid #ead4c3;background:#fff8ec;padding:8px;border-radius:10px;font-size:11px;color:#876b4b;margin-top:7px;}
+.wd-detail-modal .wdm-error.visible {display:block;}
+@media(prefers-reduced-motion:reduce) {
+ #workoutPage .wdm-gallery-tile {scroll-behavior:auto;}
+}
